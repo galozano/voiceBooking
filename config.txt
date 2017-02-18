@@ -1,0 +1,71 @@
+{
+  "intents": [
+    {
+      "intent": "BookAppointmentIntent",
+      "slots": [
+        {
+          "name": "Date",
+          "type": "AMAZON.DATE"
+        },
+        {
+          "name": "Time",
+          "type": "AMAZON.TIME"
+        }
+      ]
+    },
+    {
+      "intent": "AskTimeIntent"
+    },
+    {
+      "intent": "AMAZON.HelpIntent"
+    },
+    {
+      "intent": "AMAZON.StopIntent"
+    },
+    {
+      "intent": "AMAZON.CancelIntent"
+    }
+  ]
+}
+
+BookAppointmentIntent Book an appointment {Date} at {Time}
+BookAppointmentIntent Book an appointment on {Date} at {Time}
+BookAppointmentIntent Make an appointment on {Date} at {Time}
+BookAppointmentIntent Can you book me an appointment at {Time} on {Date}
+BookAppointmentIntent Can you book me an appointment at {Time} {Date}
+BookAppointmentIntent Can you book me an appointment on {Date} at {Time}
+AskTimeIntent At what time does my barber opens
+AskTimeIntent Is my baber shop open
+AskTimeIntent Is my baber open
+
+example
+
+{
+  "session": {
+    "sessionId": "SessionId.7de878cb-7759-44ac-89fa-9d4267a117dd",
+    "application": {
+      "applicationId": "amzn1.ask.skill.48d59ff4-009c-45e4-a487-a236e0ff4e76"
+    },
+    "attributes": {},
+    "user": {
+      "userId": "amzn1.ask.account.AFBPZT2PVPFCKZAHAH6UPH4CTY4YN2K6Y2W67J2TTXHY2CJ77OLFF6CP4MKUGZSMEFPRBJC5YX4YAT3E7XGGXIV4HNFJU7SH6REVVWU7TYPIJF723457NRIMJ4SOQLLE4DAQN4VOVQTEX7VARGBNBHJKSFNFUSKXH7ZMVKAD3FQTK7K5TSRYO2PVBETIR7TWKACOOJEXJARYAXA"
+    },
+    "new": false
+  },
+  "request": {
+    "type": "IntentRequest",
+    "requestId": "EdwRequestId.843cbed8-dfee-47a6-a47f-62afb83f08c3",
+    "locale": "en-US",
+    "timestamp": "2017-02-14T02:48:08Z",
+    "intent": {
+      "name": "MyColorIsIntent",
+      "slots": {
+        "Color": {
+          "name": "Color",
+          "value": "blue"
+        }
+      }
+    }
+  },
+  "version": "1.0"
+}
